@@ -25,9 +25,9 @@ pipeline {
 
 
 
-pwd = `pwd`; chmod     -R 777 
-$pwd/jenkins/scripts/deliver.sh;
-sh $pwd/jenkins/scripts/deliver.sh'''
+script=`pwd`jenkins/scripts/deliver.sh;chmod     -R 777 
+$script;
+sh $script'''
       }
     }
   }
